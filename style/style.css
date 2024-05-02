@@ -46,6 +46,31 @@ body {
 	overflow: hidden;
 	position: relative;
 }
+.navigation {
+    position: absolute;
+    bottom: calc(var(--index) * 13); /* Подстраиваем отступ относительно layers__title */
+    left: 49%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+ 
+    width: fit-content; /* Ширина будет зависеть от содержимого */
+}
+
+a {
+    text-decoration: none;
+    color: #e7e7e0;
+    padding-left: 18px;
+    border-radius: 30px;
+    background: #010101;
+}
+
+a:hover {
+    background: #e7e7e0;
+    color: #010101;
+}
 .layer {
 	height: 100%;
 	width: 100%;
