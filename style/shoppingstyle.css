@@ -95,12 +95,14 @@ body {
 }
 
 .sec {
+    --sec-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
     position: relative;
     background: #000000;
     padding: 5% 10%;
 }
 
 .sec h2 {
+    
     font-size: 3vw;
     color: #fff;
     margin-bottom: 1em;
