@@ -48,6 +48,44 @@ body {
 	overflow: hidden;
 	position: relative;
 }
+
+.navigation {
+    position: absolute;
+    top: 0; /* Размещаем контейнер навигации вверху страницы */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: fit-content; /* Ширина будет зависеть от содержимого */
+    margin-top: 20px; /* Добавляем отступ сверху */
+}
+
+
+a {
+    text-decoration: none;
+    color: #e7e7e0;
+    padding: 8px 18px; /* Изменим отступы */
+    margin-right: 10px; /* Добавим отступ справа */
+    background: #010101;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #e7e7e0 50%, transparent 50%);
+    background-position: 100% 50%; /* Позиция фона по центру по вертикали и сдвиг влево на половину ширины */
+    background-size: 200% 100%; /* Два цвета, поэтому размер фона 200% */
+    transition: background-position 0.3s; /* Анимация изменения фона */
+
+}
+
+a:last-child {
+    margin-right: 0; /* Убираем отступ у последней ссылки */
+}
+
+a:hover {
+    background-position: 0% 50%; /* При наведении сдвигаем фон вправо на полную ширину */
+    color: #010101;
+}
+
 .layer {
 	height: 100%;
 	width: 100%;
